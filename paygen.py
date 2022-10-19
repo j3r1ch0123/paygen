@@ -2,11 +2,11 @@
 import os
 import time
 
-print("This payload generator turns reverse shell one liners into")
-print("\nRemote Administration Tools or RATs")
-print("\nIt is recommended that you use this tool with Hoaxshell or Netcat")
+print("This payload generator turns commands into")
+print("\nMalicious payloads.")
+print("\nDo not use if on anyone unless you have permission.")
 
-payload = input("\nEnter reverse shell command: ")
+payload = input("\nEnter command: ")
 
 text = f'''\
 #!/bin/python3.10

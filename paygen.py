@@ -4,7 +4,7 @@ import time
 
 print("This payload generator turns commands into")
 print("\nMalicious payloads.")
-print("\nDo not use if on anyone unless you have permission.")
+print("\nDo not use on anyone unless you have permission.")
 
 payload = input("\nEnter command: ")
 

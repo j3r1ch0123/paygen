@@ -10,8 +10,19 @@ payload = input("\nEnter command: ")
 
 text = f'''\
 #!/bin/python3.10
-import os
-os.system('{payload}')
+from subprocess import Popen, PIPE
+import shlex
+payload = {payload}
+def execute(command):
+    try:
+        p = Popen(shlex.split(command), stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        p.wait()
+        content = file.read().strip()
+        file.close()
+        return content
+    except:
+        return Exception        
+execute(payload)
 '''
 
 with open ("payload.py", "w") as thePayload:
